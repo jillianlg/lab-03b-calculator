@@ -1,7 +1,24 @@
+import {
+  handleSumClick,
+  handleSubClick,
+  handleMulClick,
+  handleDivClick,
+} from './handlers.js';
+
+const sumButton = document.getElementById('sum-button');
+const subButton = document.getElementById('sub-button');
+const mulButton = document.getElementById('mul-button');
+const divButton = document.getElementById('div-button');
+
+sumButton.addEventListener('click', handleSumClick);
+subButton.addEventListener('click', handleSubClick);
+mulButton.addEventListener('click', handleMulClick);
+divButton.addEventListener('click', handleDivClick);
+
 // ADDITION import functions and grab DOM elements
 const sumInput1 = document.getElementById('sum-input-1');
 const sumInput2 = document.getElementById('sum-input-2');
-const sumButton = document.getElementById('sum-button');
+
 const sumTotal = document.getElementById('sum-total');
 
 // initialize state
@@ -20,7 +37,7 @@ sumButton.addEventListener('click', () => {
 // SUBTRACTION import functions and grab DOM elements
 const subInput1 = document.getElementById('sub-input-1');
 const subInput2 = document.getElementById('sub-input-2');
-const subButton = document.getElementById('sub-button');
+
 const subTotal = document.getElementById('sub-total');
 
 // initialize state
@@ -39,7 +56,7 @@ subButton.addEventListener('click', () => {
 // MULTIPLY import functions and grab DOM elements
 const mulInput1 = document.getElementById('mul-input-1');
 const mulInput2 = document.getElementById('mul-input-2');
-const mulButton = document.getElementById('mul-button');
+
 const mulTotal = document.getElementById('mul-total');
 
 // initialize state
@@ -58,7 +75,7 @@ mulButton.addEventListener('click', () => {
 // DIVIDE import functions and grab DOM elements
 const divInput1 = document.getElementById('div-input-1');
 const divInput2 = document.getElementById('div-input-2');
-const divButton = document.getElementById('div-button');
+
 const divTotal = document.getElementById('div-total');
 
 // initialize state
