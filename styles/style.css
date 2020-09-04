@@ -38,6 +38,7 @@ main {
     border: solid 4px var(--color1);
     margin-top: 40px;
     background-color: var(--color6);
+    border-radius: 10px;
 }
 
 section {
@@ -53,6 +54,7 @@ section {
     margin-top: var(--gutter);
     margin-bottom: var(--gutter);
     border: solid 3px var(--color1);
+    border-radius: 10px;
 }
 
 header {
@@ -88,8 +90,6 @@ header img {
     height: var(--header-height);
 }
 
-
-
 content {
     width: 80%;
 }
@@ -97,7 +97,7 @@ content {
 p {
     margin: var(--gutter);
 }
-  
+
 footer {
     position: fixed;
     width: 100%;
@@ -108,10 +108,10 @@ footer {
     background-color: var(--color3);
     box-shadow: var(--shadow);
 }
-  
-  @keyframes pulse {
+
+@keyframes pulse {
     20% {
-      transform: rotate3d(-10, -10, -10, 50deg) scale(1.2);
+        transform: rotate3d(-10, -10, -10, 50deg) scale(1.2);
     }
 
     40% {
@@ -120,10 +120,10 @@ footer {
 
     60% {
         transform: rotate3d(-10, 10, 10, 50deg) scale(1.2);
-      }
+    }
 
     80% {
         transform: rotate3d(10, 10, 10, 50deg) scale(1);
     }
 
-  }
+}
