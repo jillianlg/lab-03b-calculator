@@ -1,7 +1,8 @@
 // IMPORT MODULES under test here:
 // import { example } from '../example.js';
+import { sumTwoNumbers, subTwoNumbers, mulTwoNumbers, divTwoNumbers } from '../mathUtils.js';
 
-const test = QUnit.test;
+const test = QUnit.test; 
 
 test('sumTwoNumbers should return 10 if passed 5 and 5', (expect) => {
     //Arrange

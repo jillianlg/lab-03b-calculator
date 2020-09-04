@@ -1,4 +1,4 @@
-import {sumTwoNumbers, subTwoNumbers, mulTwoNumbers, divTwoNumbers } from './mathUtils.js';
+import { sumTwoNumbers, subTwoNumbers, mulTwoNumbers, divTwoNumbers } from './mathUtils.js';
 
 // ADDITION import functions and grab DOM elements
 const sumInput1 = document.getElementById('sum-input-1');
@@ -10,11 +10,10 @@ export function handleSumClick() {
     const value1 = sumInput1.valueAsNumber;
     const value2 = sumInput2.valueAsNumber;
 
-    const sum = sumTwoNumbers(value1 + value2);
+    const sum = sumTwoNumbers(value1, value2);
 
     sumTotal.textContent = sum;
 }
-
 
 // SUBTRACTION import functions and grab DOM elements
 const subInput1 = document.getElementById('sub-input-1');
@@ -53,11 +52,9 @@ const divInput2 = document.getElementById('div-input-2');
 
 const divTotal = document.getElementById('div-total');
 
-// initialize state
 
 // set event listeners to update state and DOM
 export function handleDivClick() {
-  
     const value1 = divInput1.valueAsNumber;
     const value2 = divInput2.valueAsNumber;
 
