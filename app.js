@@ -28,12 +28,12 @@ const subTotal = document.getElementById('sub-total');
 // set event listeners to update state and DOM
 subButton.addEventListener('click', () => {
 
-  const value1 = subInput1.valueAsNumber;
-  const value2 = subInput2.valueAsNumber;
+    const value1 = subInput1.valueAsNumber;
+    const value2 = subInput2.valueAsNumber;
 
-  const sub = value1 - value2;
+    const sub = value1 - value2;
 
-  subTotal.textContent = sub;
+    subTotal.textContent = sub;
 });
 
 // MULTIPLY import functions and grab DOM elements
@@ -47,12 +47,12 @@ const mulTotal = document.getElementById('mul-total');
 // set event listeners to update state and DOM
 mulButton.addEventListener('click', () => {
   
-  const value1 = mulInput1.valueAsNumber;
-  const value2 = mulInput2.valueAsNumber;
+    const value1 = mulInput1.valueAsNumber;
+    const value2 = mulInput2.valueAsNumber;
 
-  const mul = value1 * value2;
+    const mul = value1 * value2;
 
-  mulTotal.textContent = mul;
+    mulTotal.textContent = mul;
 });
 
 // DIVIDE import functions and grab DOM elements
@@ -66,10 +66,10 @@ const divTotal = document.getElementById('div-total');
 // set event listeners to update state and DOM
 divButton.addEventListener('click', () => {
   
-  const value1 = divInput1.valueAsNumber;
-  const value2 = divInput2.valueAsNumber;
+    const value1 = divInput1.valueAsNumber;
+    const value2 = divInput2.valueAsNumber;
 
-  const div = value1 / value2;
+    const div = value1 / value2;
 
-  divTotal.textContent = div;
+    divTotal.textContent = div;
 });
